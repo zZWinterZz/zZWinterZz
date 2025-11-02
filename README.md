@@ -87,12 +87,3 @@ I recently completed a full‑stack developer course. Most repositories here are
 
 </details>
 
-
-
-What I’m learning / current focus
-
-Learning React and how to integrate it with Django
-Improving my coding skills to be less reliant on AI tool contributions
-Better Django architecture and deployment practices
-More advanced JavaScript patterns and UX for interactive apps
-Writing tests and improving maintainability
