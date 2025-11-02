@@ -18,32 +18,40 @@ I recently completed a full‑stack developer course. Most repositories here are
 ### Capstone & personal work
 - **the-dead-web** — Capstone zombie‑survival game (personal). Focused on database design and CRUD operations for players, inventory, and game state.  
   Repo: https://github.com/zZWinterZz/the-dead-web  
-  Deployed: https://dashboard.heroku.com/apps/the-dead-web
+  Deployed: https://the-dead-web-fd50d169e1f7.herokuapp.com/
 
 - **think-you** — Personal frontend project where I led design and UI decisions; explores client-side state and UX patterns.  
+- **think-you** — Personal frontend project where I led design and UI decisions; explores client-side state and UX patterns.  
   Repo: https://github.com/zZWinterZz/think-you  
-  (Hosted on GitHub Pages)
+  Live: https://zZWinterZz.github.io/think-you/
 
 ### Course walkthroughs — guided course material
-- **django-blog** — Django walkthrough demonstrating app structure, authentication, admin, and CRUD flows.  
-  Repo: https://github.com/zZWinterZz/django-blog  
-  Deployed: https://dashboard.heroku.com/apps/django-blog-ci-app
 
 - **love-running** — HTML/CSS walkthrough teaching layout, responsive design, and accessible content.  
-  Repo: https://github.com/zZWinterZz/love-running (hosted on GitHub Pages)
+- **love-running** — HTML/CSS walkthrough teaching layout, responsive design, and accessible content.  
+  Repo: https://github.com/zZWinterZz/love-running  
+  Live: https://zZWinterZz.github.io/love-running/
 
 - **boardwalk-games** — Fictional boardgame library & café walkthrough demonstrating layout, component organization, and styling for themed content pages.  
-  Repo: https://github.com/zZWinterZz/boardwalk-games (hosted on GitHub Pages)
+- **boardwalk-games** — Fictional boardgame library & café walkthrough demonstrating layout, component organization, and styling for themed content pages.  
+  Repo: https://github.com/zZWinterZz/boardwalk-games  
+  Live: https://zZWinterZz.github.io/boardwalk-games/
 
 - **seven-seas-spa** — Static site walkthrough/demo showing structure and styling patterns for a spa landing page.  
-  Repo: https://github.com/zZWinterZz/seven-seas-spa (hosted on GitHub Pages)
+- **seven-seas-spa** — Static site walkthrough/demo showing structure and styling patterns for a spa landing page.  
+  Repo: https://github.com/zZWinterZz/seven-seas-spa  
+  Live: https://zZWinterZz.github.io/seven-seas-spa/
 
 ### Interactive JavaScript walkthroughs
 - **typeracer** — Typing game walkthrough teaching event handling, timers, scoring, and simple state management.  
-  Repo: https://github.com/zZWinterZz/typeracer (hosted on GitHub Pages)
+- **typeracer** — Typing game walkthrough teaching event handling, timers, scoring, and simple state management.  
+  Repo: https://github.com/zZWinterZz/typeracer  
+  Live: https://zZWinterZz.github.io/typeracer/
 
 - **love-maths** — Interactive math practice walkthrough focusing on input validation, dynamic UI updates, and exercise design.  
-  Repo: https://github.com/zZWinterZz/love-maths (hosted on GitHub Pages)
+- **love-maths** — Interactive math practice walkthrough focusing on input validation, dynamic UI updates, and exercise design.  
+  Repo: https://github.com/zZWinterZz/love-maths  
+  Live: https://zZWinterZz.github.io/love-maths/
 
 ### Hackathons & collaborations
 - **const-collection-full-stack-hackathon** — E‑commerce hackathon collaboration built for a real‑world stakeholder to showcase and sell artwork; focused on product listings, cart/checkout flows, and stakeholder UX. (repo owner: DylanAustin-TheDreamer)  
@@ -65,7 +73,7 @@ I recently completed a full‑stack developer course. Most repositories here are
 - Course material: most repos are coursework walkthroughs and guided projects created as part of the course curriculum.  
 - Collaborations: hackathon repos were team efforts with other students.  
 - Personal / creative control: the-dead-web (capstone) and think-you are my personal projects where I led the design and implementation choices.  
-- Deployments: the-dead-web, django-blog, and const-collection have Heroku deployments; other repos are hosted via GitHub Pages.
+- Deployments: the-dead-web and const-collection have Heroku deployments; other repos are hosted via GitHub Pages.
 
 </details>
 

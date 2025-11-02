@@ -1,0 +1,242 @@
+/* Dark theme and small UI tweaks
+	 Uses CSS variables. Toggle theme by setting: <html data-theme="dark"> */
+
+:root{
+	--bg: #f3e2e2;
+	/* slightly off-white surface so navbar/sections read separately from the page */
+	--surface: #f4f6f8;
+	--text: #212529;
+	--muted: #6c757d;
+	--primary: #0d6efd;
+	/* subtle off-white for cards so they sit slightly above the page background */
+	--card-bg: #f0efec;
+	--card-border: rgba(0,0,0,.08);
+	--accent: #7aa2ff;
+	--navbar-height: 72px; /* offset used when navbar is fixed */
+}
+
+[data-theme="dark"]{
+	--bg: #0a0b0f;
+	--surface: #0f1115;
+	--text: #e6edf3;
+	--muted: #9aa4b2;
+	--primary: #747475;
+	--card-bg: #0e1114;
+	--card-border: rgba(255,255,255,.06);
+	--accent: #7aa2ff;
+}
+
+html,body{
+	height:100%;
+}
+body{
+	background:var(--bg);
+	color:var(--text);
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	padding-top: var(--navbar-height); /* offset page content for fixed navbar */
+}
+
+/* Make sections that used bg-light blend with theme */
+.bg-light{
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+	background-color: transparent !important;
+}
+
+.navbar, footer{
+	background: var(--surface) !important;
+}
+.navbar-brand, .nav-link{
+	color: var(--text) !important;
+}
+.nav-link:hover{
+	color: var(--accent) !important;
+}
+
+.card{
+	background: var(--card-bg);
+	color: var(--text);
+	border-color: var(--card-border);
+}
+
+/* Uniform thumbnail sizing */
+.card-img-top{
+	width:100%;
+	height:180px;
+	object-fit:cover;
+}
+
+.rounded-circle[aria-hidden="true"]{
+	background: linear-gradient(135deg, rgba(0,0,0,0.12), rgba(255,255,255,0.02));
+}
+
+/* Buttons -- keep Bootstrap look but adapt colors */
+.btn-primary{
+	background-color: var(--primary) !important;
+	border-color: var(--primary) !important;
+}
+.btn-outline-primary{
+	color: var(--primary) !important;
+	border-color: color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+.badge.bg-primary{
+	background-color: color-mix(in srgb, var(--primary) 60%, var(--card-bg));
+	color: var(--card-bg);
+}
+
+/* focus-visible for accessibility */
+a:focus, button:focus{
+	outline: 3px solid rgba(122,162,255,0.25);
+	outline-offset: 2px;
+}
+
+/* Small responsive tweaks */
+@media (max-width:576px){
+	.card-img-top{height:140px}
+}
+
+/* Make footer text slightly muted */
+footer{color:var(--muted)}
+
+/* card shadows and hover lift */
+.card{
+	box-shadow: 0 6px 18px rgba(2,6,23,0.12);
+	transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{
+	transform: translateY(-6px);
+	box-shadow: 0 12px 32px rgba(2,6,23,0.18);
+}
+
+/* darker shadow in dark theme */
+[data-theme="dark"] .card{
+	box-shadow: 0 6px 22px rgba(0,0,0,0.6);
+}
+[data-theme="dark"] .card:hover{
+	box-shadow: 0 14px 40px rgba(0,0,0,0.75);
+}
+
+
+/* NAVBAR: give it body and presence */
+.navbar{
+	padding: .7rem 0;
+	border-bottom: 1px solid rgba(255,255,255,0.04);
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0));
+	box-shadow: 0 6px 18px rgba(2,6,23,0.35);
+	position: fixed; /* keep navbar visible */
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1050;
+	height: var(--navbar-height);
+}
+.navbar .container{align-items:center}
+.navbar-brand{
+	font-weight:600;
+	letter-spacing: .2px;
+	color:var(--text) !important;
+}
+.nav-link{
+	color:var(--muted) !important;
+	padding:.4rem .6rem;
+}
+.nav-link:hover, .nav-link:focus{color:var(--accent) !important}
+.nav-link.active{color:var(--primary) !important; font-weight:600}
+.navbar-toggler{border-color:rgba(255,255,255,0.06)}
+[data-theme="dark"] .navbar-toggler-icon{filter:invert(1) brightness(1.2)}
+
+/* BUTTONS */
+.btn{
+	border-radius:.5rem;
+	transition: transform .08s ease, box-shadow .12s ease, background-color .12s;
+}
+.btn:active{transform:translateY(1px)}
+.btn-outline-secondary{color:var(--muted); border-color:rgba(255,255,255,0.06)}
+.btn-outline-secondary:hover{background:rgba(122,162,255,0.08); color:var(--accent); border-color:var(--accent)}
+.btn-sm{padding:.35rem .6rem}
+
+/* OUTLINE PRIMARY (tweaked for theme) */
+.btn-outline-primary{
+	color:var(--primary) !important;
+	border-color: color-mix(in srgb, var(--primary) 40%, transparent);
+}
+.btn-outline-primary:hover{background: color-mix(in srgb, var(--primary) 8%, transparent);}
+
+/* BADGES */
+.badge{
+	border-radius:.5rem;
+	padding:.35em .6em;
+	font-weight:600;
+	background: rgba(254, 255, 255, 0.12);
+	color:var(--primary);
+}
+.badge.bg-primary{background:var(--primary); color:#fff}
+
+/* LINKS */
+a{color:var(--accent)}
+a:hover{text-decoration:underline; color: color-mix(in srgb, var(--accent) 70%, var(--text))}
+
+/* subtle spacing for sections */
+section.py-5{padding-top:2.5rem; padding-bottom:2.5rem}
+
+/* footer tweaks */
+footer{
+	background-color:var(--card-bg);
+	color:var(--muted);
+	border-top: 1px solid var(--card-border);
+	padding: 1.25rem 0;
+}
+footer a{ color: var(--primary); text-decoration: none; }
+footer a:hover{ color: var(--accent), var(--text); text-decoration: underline; }
+
+/* dark-theme footer tweaks */
+[data-theme="dark"] footer{
+	background-color: var(--card-bg) !important;
+	color: var(--muted);
+	border-top-color: rgba(255,255,255,0.04);
+}
+[data-theme="dark"] footer a{ color: var(--accent); }
+
+/* Projects: center headings and cards */
+#projects .container h3, #projects .container h4{
+	text-align:center;
+}
+#projects .row{
+	justify-content:center; /* center card columns */
+}
+#projects .card{
+	max-width:360px; /* keep cards narrow and centered */
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+
+/* Section dividers: subtle lines between sections */
+main > section{
+	border-top: 1px solid rgba(255,255,255,0.03);
+}
+main > section:first-of-type{border-top: none}
+
+/* Divider lines between project subsections (h4 groups inside #projects) */
+#projects h4{
+	border-top: 1px solid rgba(255,255,255,0.04);
+	padding-top: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+/* Remove divider on the first subsection heading */
+#projects h4:first-of-type{
+	border-top: none;
+	padding-top: .25rem;
+	margin-top: .25rem;
+}
+
+
+/* reduce navbar height on small screens (account for wrapped toggler/menu) */
+@media (max-width:767px){
+	:root{ --navbar-height: 96px; }
+	body{ padding-top: var(--navbar-height); }
+}
+
+
