@@ -1,7 +1,7 @@
 # Hi — I’m zZWinterZz 👋
 
 ## I’m a junior full‑stack developer
-I recently completed a full‑stack developer course. Most repositories here are course projects or collaborative hackathon work; the projects where I had the most creative control are my capstone (the-dead-web) and a personal frontend (think-you). I enjoy building interactive frontends, small browser games, and full‑stack apps that demonstrate practical CRUD, deployment, and UX patterns.
+I recently completed a full‑stack developer course. Most repositories here are course projects or collaborative hackathon work; the projects where I had the most creative control are my capstone (the-dead-web) and a frontend project from my course (think-you). I enjoy building interactive frontends, small browser games, and full‑stack apps that demonstrate practical CRUD, deployment, and UX patterns.
 
 https://zzwinterzz.github.io/zZWinterZz/
 
