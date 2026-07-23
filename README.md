@@ -19,14 +19,6 @@ https://zzwinterzz.github.io/zZWinterZz/
 <details>
 <summary>⭐ Notable projects</summary>
 
-### Certifications
-Verified via [credential.net](https://www.credential.net/profile/ryanwinter712201/wallet) (Accredible, W3C Verifiable Credentials) — click either certificate to verify, or visit the wallet link above to download Open Badge 3.0 / W3C VC formats directly.
-
-<p>
-  <a href="https://www.credential.net/profile/ryanwinter712201/wallet"><img src="static/images/certificate_bootcamp.png" alt="Skills Bootcamp Certificate of Achievement" width="400"></a>
-  <a href="https://www.credential.net/profile/ryanwinter712201/wallet"><img src="static/images/certificate_final_project.png" alt="Higher Level - Final Project Passed" width="400"></a>
-</p>
-
 ### First real-world project
 - **alansalbums.com** — First real-world e‑commerce practice project (private repo) built for a relative to sell vintage media (vinyl records and cassette tapes). Drew heavy inspiration from the const-collection hackathon and focuses on product presentation, inventory, and checkout UX.  
   Live: https://www.alansalbums.com
@@ -107,5 +99,17 @@ Verified via [credential.net](https://www.credential.net/profile/ryanwinter71220
 <summary>📫 Contact</summary>
 
 - LinkedIn: https://www.linkedin.com/in/ryan-winter-893194340
+
+</details>
+
+<details>
+<summary>🎓 Certifications</summary>
+
+Verified via [credential.net](https://www.credential.net/profile/ryanwinter712201/wallet) (Accredible, W3C Verifiable Credentials) — click either certificate to verify, or visit the wallet link above to download Open Badge 3.0 / W3C VC formats directly.
+
+<p>
+  <a href="https://www.credential.net/profile/ryanwinter712201/wallet"><img src="static/images/certificate_bootcamp.png" alt="Skills Bootcamp Certificate of Achievement" width="400"></a>
+  <a href="https://www.credential.net/profile/ryanwinter712201/wallet"><img src="static/images/certificate_final_project.png" alt="Higher Level - Final Project Passed" width="400"></a>
+</p>
 
 </details>
